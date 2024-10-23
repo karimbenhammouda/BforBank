@@ -16,7 +16,7 @@ public enum Destination: Codable, Hashable {
 struct HomeCoordinator: View {
     var body: some View {
         VStack {
-            HomeView(viewModel: HomeViewModel(coordinator: self))
+            HomeView()
             .listStyle(PlainListStyle())
             .navigationBarTitle("Ajouter un bénéficiaire", displayMode: .inline)
         }

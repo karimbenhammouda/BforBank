@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeButtonView: View {
     let text: String
     let image: String
-    let tapOnAction: () -> Void
+    let tapOnAction: () -> Void?
     
     var body: some View {
         Button(action: {
