@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject var viewModel = HomeViewModel()
+    @StateObject var viewModel: HomeViewModel
     @State private var iban: String = ""
 
     var body: some View {
@@ -20,11 +20,11 @@ struct HomeView: View {
             
             HStack {
                 HomeButtonView(text: "Scanner", image: "scan", tapOnAction: {
-                    print("1")
+                    viewModel.coordinator.navigate(to: .textScan)
                 })
                     .padding(16)
                 HomeButtonView(text: "Impoter", image: "import", tapOnAction: { 
-                    print("2")
+                    viewModel.coordinator.navigate(to: .textImport)
                 })
                     .padding(16)
             }
@@ -40,7 +40,7 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(viewModel: HomeViewModel(coordinator: HomeCoordinator()))
     }
 }
 
