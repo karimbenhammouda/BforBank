@@ -8,39 +8,59 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject var viewModel: HomeViewModel
     @State private var iban: String = ""
+    @State var answer = false
 
     var body: some View {
-        VStack {
-            Text("Scannez, importez ou saisissez l’IBAN")
-                .font(.system(size: 18))
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(16)
-            
-            HStack {
-                HomeButtonView(text: "Scanner", image: "scan", tapOnAction: {
-                    viewModel.coordinator.navigate(to: .textScan)
-                })
+        NavigationView {
+            VStack {
+                Text("Scannez, importez ou saisissez l’IBAN")
+                    .font(.system(size: 18))
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(16)
-                HomeButtonView(text: "Impoter", image: "import", tapOnAction: { 
-                    viewModel.coordinator.navigate(to: .textImport)
-                })
-                    .padding(16)
+                
+                
+                VStack {
+                    NavigationLink(destination: TextScanView( shouldPopToRootView: $answer).environmentObject(TextScanViewModel()), isActive: $answer, label: {
+                        Button(action: {
+                            
+                        }, label: {
+                            HStack {
+                                HomeButtonView(text: "Scanner", image: "scan", tapOnAction: {
+                                    answer = true
+                                }).padding(16)
+                                
+                                HomeButtonView(text: "Scanner", image: "scan", tapOnAction: {
+                                    answer = true
+                                }).padding(16)
+                            }
+                            
+                        })
+                    })
+                }
+                UnderlineTextFieldView()
+                Spacer()
             }
-
-            UnderlineTextFieldView()
-            
-            
-            
-            Spacer()
         }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(viewModel: HomeViewModel(coordinator: HomeCoordinator()))
+        HomeView()
+    }
+}
+
+
+struct SheetView: View {
+    
+    var body: some View {
+        NavigationView {
+            VStack{
+                Text("Test")
+                    .font(.title)
+            }
+        }
     }
 }
 
