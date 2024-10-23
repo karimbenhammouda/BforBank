@@ -21,12 +21,4 @@ struct HomeCoordinator: View {
             .navigationBarTitle("Ajouter un bénéficiaire", displayMode: .inline)
         }
     }
-    
-    func navigate(to destination: Destination) {
-        switch destination {
-            case .textScan: break
-            case .textImport: break
-        }
-    }
-    
 }

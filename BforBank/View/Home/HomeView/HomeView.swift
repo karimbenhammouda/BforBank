@@ -30,7 +30,7 @@ struct HomeView: View {
                                     answer = true
                                 }).padding(16)
                                 
-                                HomeButtonView(text: "Scanner", image: "scan", tapOnAction: {
+                                HomeButtonView(text: "Importer", image: "import", tapOnAction: {
                                     answer = true
                                 }).padding(16)
                             }
@@ -50,19 +50,3 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
-
-
-struct SheetView: View {
-    
-    var body: some View {
-        NavigationView {
-            VStack{
-                Text("Test")
-                    .font(.title)
-            }
-        }
-    }
-}
-
-
-
