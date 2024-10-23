@@ -14,12 +14,15 @@
 		43736D882652280900CE4368 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43736D872652280900CE4368 /* Preview Assets.xcassets */; };
 		43736D8B2652280900CE4368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43736D892652280900CE4368 /* LaunchScreen.storyboard */; };
 		43A601CD265267C000B24B9D /* BforBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A601CC265267C000B24B9D /* BforBankTests.swift */; };
-		8AE666CC2CC92C3200F5CC37 /* HometCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE666CB2CC92C3200F5CC37 /* HometCoordinator.swift */; };
+		8AAF37C22CC9824C00EB5A03 /* DataScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAF37C12CC9824C00EB5A03 /* DataScannerView.swift */; };
+		8AE666CC2CC92C3200F5CC37 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE666CB2CC92C3200F5CC37 /* HomeCoordinator.swift */; };
 		8AE666CF2CC92D3600F5CC37 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE666CE2CC92D3600F5CC37 /* HomeView.swift */; };
 		8AE666D12CC92D4F00F5CC37 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE666D02CC92D4F00F5CC37 /* HomeViewModel.swift */; };
 		8AE666D62CC93C4900F5CC37 /* home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE666D52CC93C4900F5CC37 /* home.xcassets */; };
 		8AE666DA2CC95C2600F5CC37 /* UnderlineTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE666D92CC95C2600F5CC37 /* UnderlineTextFieldView.swift */; };
 		8AE666DF2CC9618600F5CC37 /* HomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE666DE2CC9618500F5CC37 /* HomeButtonView.swift */; };
+		8AE666E52CC969FD00F5CC37 /* TextScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE666E42CC969FD00F5CC37 /* TextScanView.swift */; };
+		8AE666E72CC9746400F5CC37 /* TextScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE666E62CC9746400F5CC37 /* TextScanViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,12 +47,15 @@
 		43A601CA265267C000B24B9D /* BforBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BforBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A601CC265267C000B24B9D /* BforBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BforBankTests.swift; sourceTree = "<group>"; };
 		43A601CE265267C000B24B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8AE666CB2CC92C3200F5CC37 /* HometCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HometCoordinator.swift; sourceTree = "<group>"; };
+		8AAF37C12CC9824C00EB5A03 /* DataScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
+		8AE666CB2CC92C3200F5CC37 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		8AE666CE2CC92D3600F5CC37 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8AE666D02CC92D4F00F5CC37 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8AE666D52CC93C4900F5CC37 /* home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = home.xcassets; sourceTree = "<group>"; };
 		8AE666D92CC95C2600F5CC37 /* UnderlineTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextFieldView.swift; sourceTree = "<group>"; };
 		8AE666DE2CC9618500F5CC37 /* HomeButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeButtonView.swift; sourceTree = "<group>"; };
+		8AE666E42CC969FD00F5CC37 /* TextScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextScanView.swift; sourceTree = "<group>"; };
+		8AE666E62CC9746400F5CC37 /* TextScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextScanViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +154,9 @@
 		8AE666CA2CC92BF700F5CC37 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8AE666E02CC9697700F5CC37 /* ScanView */,
 				8AE666CD2CC92D0900F5CC37 /* HomeView */,
-				8AE666CB2CC92C3200F5CC37 /* HometCoordinator.swift */,
+				8AE666CB2CC92C3200F5CC37 /* HomeCoordinator.swift */,
 				8AE666D52CC93C4900F5CC37 /* home.xcassets */,
 			);
 			path = Home;
@@ -167,6 +174,7 @@
 		8AE666D72CC95C0A00F5CC37 /* Commun */ = {
 			isa = PBXGroup;
 			children = (
+				8AE666EB2CC981A900F5CC37 /* DataScannerView */,
 				8AE666DB2CC9615100F5CC37 /* ButtonView */,
 				8AE666D82CC95C1900F5CC37 /* UnderlineTextFieldView */,
 			);
@@ -187,6 +195,31 @@
 				8AE666DE2CC9618500F5CC37 /* HomeButtonView.swift */,
 			);
 			path = ButtonView;
+			sourceTree = "<group>";
+		};
+		8AE666E02CC9697700F5CC37 /* ScanView */ = {
+			isa = PBXGroup;
+			children = (
+				8AE666E32CC969E100F5CC37 /* TextScanView */,
+			);
+			path = ScanView;
+			sourceTree = "<group>";
+		};
+		8AE666E32CC969E100F5CC37 /* TextScanView */ = {
+			isa = PBXGroup;
+			children = (
+				8AE666E42CC969FD00F5CC37 /* TextScanView.swift */,
+				8AE666E62CC9746400F5CC37 /* TextScanViewModel.swift */,
+			);
+			path = TextScanView;
+			sourceTree = "<group>";
+		};
+		8AE666EB2CC981A900F5CC37 /* DataScannerView */ = {
+			isa = PBXGroup;
+			children = (
+				8AAF37C12CC9824C00EB5A03 /* DataScannerView.swift */,
+			);
+			path = DataScannerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,8 +331,11 @@
 				8AE666DA2CC95C2600F5CC37 /* UnderlineTextFieldView.swift in Sources */,
 				8AE666D12CC92D4F00F5CC37 /* HomeViewModel.swift in Sources */,
 				43736D812652280700CE4368 /* SceneDelegate.swift in Sources */,
-				8AE666CC2CC92C3200F5CC37 /* HometCoordinator.swift in Sources */,
+				8AE666E52CC969FD00F5CC37 /* TextScanView.swift in Sources */,
+				8AE666CC2CC92C3200F5CC37 /* HomeCoordinator.swift in Sources */,
+				8AE666E72CC9746400F5CC37 /* TextScanViewModel.swift in Sources */,
 				8AE666DF2CC9618600F5CC37 /* HomeButtonView.swift in Sources */,
+				8AAF37C22CC9824C00EB5A03 /* DataScannerView.swift in Sources */,
 				8AE666CF2CC92D3600F5CC37 /* HomeView.swift in Sources */,
 				43736D832652280700CE4368 /* ContentView.swift in Sources */,
 			);
@@ -461,7 +497,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BforBank/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,7 +519,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BforBank/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
