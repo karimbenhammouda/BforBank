@@ -13,7 +13,7 @@ struct UnderlineTextFieldView: View {
     var body: some View {
         VStack {
             
-            TextField("iban", text: $iban)
+            TextField("FR76 XXXX", text: $iban)
                 .padding(.horizontal, 30).padding(.top, 20)
             
             Divider()
